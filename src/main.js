@@ -16,7 +16,7 @@ function shift(index) {
   tapes.forEach((tape, idx) => {
     // reposition the tapes, if index center, rotate, and zoom in
     if (idx === index) {
-      tape.style.left = `54.5%`;
+      tape.style.left = `50%`;
       tape.style.zIndex = 100;
     } else if (idx < index) {
       const math = (idx+1) * tapeSpaceLeft;
