@@ -40,6 +40,17 @@ function shift(index) {
 // init position
 shift(currentTape);
 
+// add link click events to all tapes
+tapes.forEach((tape) => {
+  tape.addEventListener("click", function(event) {
+    const theYT = tape.querySelector('.get-yt-link');
+    const theLink = theYT.getAttribute('data-link');
+    console.log("the link: ", theLink);
+
+    window.open("https://www.youtube-nocookie.com/watch?v=hMAApaXuY3g", "_blank", "noopener noreferrer");
+  })
+})
+
 // add the button events
 leftButton.addEventListener("click", () => {
   if (currentTape > 0) {
