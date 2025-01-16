@@ -47,7 +47,7 @@ tapes.forEach((tape) => {
     const theLink = theYT.getAttribute('data-link');
     console.log("the link: ", theLink);
 
-    window.open("https://www.youtube-nocookie.com/watch?v=hMAApaXuY3g", "_blank", "noopener noreferrer");
+    window.open(theLink, "_blank", "noopener noreferrer");
   })
 })
 
