@@ -1,5 +1,6 @@
 const wrapper = document.querySelector(".scroll-3d");
-const tapes = document.querySelectorAll(".collection-item");
+const tapes = document.querySelectorAll(".collection-item") || 
+  document.querySelectorAll(".tape-collection-item");
 const leftButton = document.querySelector(".left-arrow");
 const rightButton = document.querySelector(".right-arrow");
 // console.log("tapes", tapes);
