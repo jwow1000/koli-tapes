@@ -1,16 +1,16 @@
 const wrapper = document.querySelector(".scroll-3d");
+// select items for different pages
 let tapes = {};
 const tape1 = document.querySelectorAll(".collection-item");
-const tape2 = document.querySelectorAll(".collection-item-8");
+const tape2 = document.querySelectorAll(".tape-collection-item");
 if( tape1.length > 0 ) {
   tapes = tape1;
 } else {
   tapes = tape2;
 }
-
+console.log("tapes: ", tapes)
 const leftButton = document.querySelector(".left-arrow");
 const rightButton = document.querySelector(".right-arrow");
-// console.log("tapes", tapes);
 
 // get total tape amount
 const tapeAmount = tapes.length;
